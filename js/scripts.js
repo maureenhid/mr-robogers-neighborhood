@@ -1,7 +1,11 @@
 // business logic
 var numberRange = function(number) {
-    return number;
-  }; 
+  var newNumberRange = [];
+  for (let i = 0; i <= number; i++) {
+    newNumberRange.push(' ' + i);
+  }
+  return(newNumberRange.toString());
+}; 
 
 // user interface logic
 $(document).ready(function() {
