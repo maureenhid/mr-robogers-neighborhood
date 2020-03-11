@@ -1,3 +1,9 @@
+// business logic
+var numberRange = function(number) {
+    return number;
+  }; 
+
+// user interface logic
 $(document).ready(function() {
   $("form#mr-roboger").submit(function(event) {
     event.preventDefault();
