@@ -1,10 +1,16 @@
 // business logic
 var numberRange = function(number) {
-  var newNumberRange = [];
+  var newNumberRanges = [];
   for (let i = 0; i <= number; i++) {
-    newNumberRange.push(' ' + i);
+    newNumberRanges.push(' ' + i);
   }
-  return(newNumberRange.toString());
+
+  if(newNumberRanges.indexOf(1) !== -1) {
+    alert("Value exists!")
+} else {
+    alert("Value does not exist!")
+}
+  return(newNumberRanges.toString());
 }; 
 
 // user interface logic
