@@ -8,7 +8,9 @@ var numberRange = function(number) {
   console.log(newNumberRanges);
 
   newNumberRanges.forEach(function(newNumberRange) {
-    if (newNumberRanges[newNumberRange].toString().includes('2')) {
+    if (newNumberRanges[newNumberRange].toString().includes('3')) {
+      newNumberRanges[newNumberRange] = "Won't you be my neighbor?";
+  } else if (newNumberRanges[newNumberRange].toString().includes('2')) {
       newNumberRanges[newNumberRange] = 'Boop!';
   } else if (newNumberRanges[newNumberRange].toString().includes('1')) {
     newNumberRanges[newNumberRange] = 'Beep!';
