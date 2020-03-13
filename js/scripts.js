@@ -2,15 +2,21 @@
 var numberRange = function(number) {
   var newNumberRanges = [];
   for (let i = 0; i <= number; i++) {
-    newNumberRanges.push(' ' + i);
+    newNumberRanges.push(i);
   }
+  console.log(newNumberRanges);
 
-  if(newNumberRanges.indexOf(1) !== -1) {
-    alert("Value exists!")
-} else {
-    alert("Value does not exist!")
-}
-  return(newNumberRanges.toString());
+  newNumberRanges.forEach(function(newNumberRange) {
+    if (newNumberRanges.includes(3)) {
+      newNumberRanges[3] = "Won't you be my neighbor?";
+    } else if (newNumberRanges.includes(2)) {
+      newNumberRanges[2] = 'Boop!';
+  } else if (newNumberRanges.includes(1)) {
+    newNumberRanges[1] = 'Beep!';
+  }
+})
+
+  return(newNumberRanges);
 }; 
 
 // user interface logic
