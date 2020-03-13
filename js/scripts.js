@@ -4,15 +4,12 @@ var numberRange = function(number) {
   for (let i = 0; i <= number; i++) {
     newNumberRanges.push(i);
   }
+
   console.log(newNumberRanges);
 
   newNumberRanges.forEach(function(newNumberRange) {
-    if (newNumberRanges.includes(3)) {
-      newNumberRanges[3] = "Won't you be my neighbor?";
-    } else if (newNumberRanges.includes(2)) {
-      newNumberRanges[2] = 'Boop!';
-  } else if (newNumberRanges.includes(1)) {
-    newNumberRanges[1] = 'Beep!';
+    if (newNumberRanges[newNumberRange].toString().includes('1')) {
+    newNumberRanges[newNumberRange] = 'Beep!';
   }
 })
 
